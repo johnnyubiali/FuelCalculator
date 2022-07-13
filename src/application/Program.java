@@ -29,7 +29,15 @@ public class Program {
 		
 		AverageCalculate ac = new AverageCalculate(kmInitial, kmFinal, liters);
 		
-		System.out.println("The average consumption of your " + vehicle.getCar() + " is " + ac.calculate(vehicle) + " L/Km");
+		
+		System.out.println("The average consumption of your " 
+							+ vehicle.getModel() 
+							+ " " 
+							+ vehicle.getCar() 
+							+ " with " + vehicle.getFuel() 
+							+ " is " 
+							+ String.format("%.2f", ac.calculate(vehicle)) 
+							+ " Km/L");
 		
 		scan.close();
 	}
