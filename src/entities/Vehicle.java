@@ -4,10 +4,9 @@ public class Vehicle {
 
 	private String model;
 	private String car;
-	
-	private Fuel fuel;
+	private String fuel;
 
-	public Vehicle(String model, String car, Fuel fuel) {
+	public Vehicle(String model, String car, String fuel) {
 		this.model = model;
 		this.car = car;
 		this.fuel = fuel;
@@ -29,11 +28,11 @@ public class Vehicle {
 		this.car = car;
 	}
 
-	public Fuel getFuel() {
+	public String getFuel() {
 		return fuel;
 	}
 
-	public void setFuel(Fuel fuel) {
+	public void setFuel(String fuel) {
 		this.fuel = fuel;
 	}
 	
