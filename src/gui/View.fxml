@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane animated="false" prefHeight="206.0" prefWidth="202.0" text="Average Fuel Calculator" textFill="#040d86">
+        <content>
+          <AnchorPane minHeight="400.0" minWidth="500.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="40.0" layoutY="165.0" text="Initial Km">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="204.0" text="Final Km">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="26.0" text="Car Model">
+                     <font>  
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="69.0" text="Car Name">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="114.0" text="Fuel Type">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="242.0" text="Liters">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCarModel" layoutX="130.0" layoutY="24.0" promptText="Enter a Model car..." />
+                  <TextField fx:id="txtCarName" layoutX="130.0" layoutY="67.0" promptText="Enter a Name car..." />
+                  <TextField fx:id="txtFuelType" layoutX="130.0" layoutY="112.0" promptText="Enter a Fuel Type..." />
+                  <TextField fx:id="txtInitialKm" layoutX="130.0" layoutY="163.0" promptText="Enter the Km Initial..." />
+                  <TextField fx:id="txtFinalKm" layoutX="130.0" layoutY="202.0" promptText="Enter the Km Final..." />
+                  <TextField fx:id="txtLiters" layoutX="130.0" layoutY="240.0" promptText="Enter the reffil Liters.." />
+                  <TextField fx:id="txtAverage" layoutX="324.0" layoutY="293.0" prefHeight="45.0" prefWidth="94.0">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="32.0" layoutY="293.0" text="The average consumption of your">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="417.0" layoutY="301.0" text="Km/L">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btCalculate" layoutX="324.0" layoutY="118.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="135.0" text="Calculate">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblModelCar" layoutX="32.0" layoutY="328.0" prefHeight="20.0" prefWidth="59.0" textFill="#04027c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCarName" layoutX="114.0" layoutY="328.0" prefHeight="20.0" prefWidth="59.0" textFill="#04027c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="205.0" layoutY="326.0" text="in">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblFuelType" layoutX="236.0" layoutY="328.0" text="Label" textFill="#070707">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>
