@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
    <children>
       <TitledPane animated="false" prefHeight="206.0" prefWidth="202.0" text="Average Fuel Calculator" textFill="#040d86">
         <content>
@@ -49,42 +49,42 @@
                   <TextField fx:id="txtInitialKm" layoutX="130.0" layoutY="163.0" promptText="Enter the Km Initial..." />
                   <TextField fx:id="txtFinalKm" layoutX="130.0" layoutY="202.0" promptText="Enter the Km Final..." />
                   <TextField fx:id="txtLiters" layoutX="130.0" layoutY="240.0" promptText="Enter the reffil Liters.." />
-                  <TextField fx:id="txtAverage" layoutX="324.0" layoutY="293.0" prefHeight="45.0" prefWidth="94.0">
+                  <TextField fx:id="txtAverage" layoutX="324.0" layoutY="296.0" prefHeight="57.0" prefWidth="94.0">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </TextField>
-                  <Label layoutX="32.0" layoutY="293.0" text="The average consumption of your">
+                  <Label layoutX="61.0" layoutY="294.0" text="The average consumption of your">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="417.0" layoutY="301.0" text="Km/L">
+                  <Label layoutX="425.0" layoutY="297.0" text="Km/L">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </Label>
-                  <Button fx:id="btCalculate" layoutX="324.0" layoutY="118.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="135.0" text="Calculate">
+                  <Button fx:id="btCalculate" layoutX="324.0" layoutY="118.0" mnemonicParsing="false" onAction="#onBtCalculate" prefHeight="91.0" prefWidth="135.0" text="Calculate">
                      <font>
                         <Font name="System Bold" size="22.0" />
                      </font>
                   </Button>
-                  <Label fx:id="lblModelCar" layoutX="32.0" layoutY="328.0" prefHeight="20.0" prefWidth="59.0" textFill="#04027c">
+                  <Label fx:id="lblModelCar" layoutX="33.0" layoutY="324.0" prefHeight="20.0" prefWidth="115.0" textFill="#04027c">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblCarName" layoutX="114.0" layoutY="328.0" prefHeight="20.0" prefWidth="59.0" textFill="#04027c">
+                  <Label fx:id="lblCarName" layoutX="33.0" layoutY="350.0" prefHeight="20.0" prefWidth="180.0" textFill="#04027c">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="205.0" layoutY="326.0" text="in">
+                  <Label layoutX="213.0" layoutY="333.0" text="in">
                      <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="System Bold" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblFuelType" layoutX="236.0" layoutY="328.0" text="Label" textFill="#070707">
+                  <Label fx:id="lblFuelType" layoutX="246.0" layoutY="340.0" prefHeight="20.0" prefWidth="67.0" textFill="#070707">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
