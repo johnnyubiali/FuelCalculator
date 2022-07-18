@@ -1,5 +1,7 @@
 package gui;
 
+import java.text.NumberFormat;
+
 import entities.Vehicle;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -54,10 +56,15 @@ public class ViewController {
 			lblModelCar.setText(vehicle.getModel());
 			lblCarName.setText(vehicle.getCar());
 			lblFuelType.setText(vehicle.getFuel());
+			
+			
 
-			double kmInitial = Double.parseDouble(txtInitialKm.getText());
-			double kmFinal = Double.parseDouble(txtFinalKm.getText());
-			double liters = Double.parseDouble(txtLiters.getText());
+			//double kmInitial = Double.parseDouble(txtInitialKm.getText());
+			double kmInitial = NumberFormat.getInstance().parse(txtInitialKm.getText()).doubleValue();
+			//double kmFinal = Double.parseDouble(txtFinalKm.getText());
+			double kmFinal = NumberFormat.getInstance().parse(txtFinalKm.getText()).doubleValue();
+			//double liters = Double.parseDouble(txtLiters.getText());
+			double liters = NumberFormat.getInstance().parse(txtLiters.getText()).doubleValue();
 
 			AverageCalculate ac = new AverageCalculate(kmInitial, kmFinal, liters);
 
